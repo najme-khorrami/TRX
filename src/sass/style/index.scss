@@ -1,0 +1,66 @@
+header{
+    height: 64px;
+    .img-box{
+        width: 40px;
+        height: 40px;
+    }
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    background: linear-gradient(90deg, #2E40FA -10.98%, #53F5B5 211.92%);
+    .navigation{
+        > a{
+            width: 64px;
+        }
+        .active{
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+main{
+    .card-1{
+        background: linear-gradient(270deg, #F6CA3D 0%, #F465B0 100%);
+    }
+    .card-2{
+        background: linear-gradient(270deg, #46B0FF 0%, #48E3BD 100%);
+    }
+    .card-3{
+        background: linear-gradient(270deg, #53F2EB 0%, #44D98C 100%);
+    }
+    .card-4{
+        background: linear-gradient(270deg, #47D2DB 0%, #EF00FF 100%);
+    }
+}
+@include media-breakpoint-down(sm){
+    header .input-group{
+        margin-right: 20px !important;
+        padding-right: 0 !important;
+    }
+}
+@include media-breakpoint-down(md){
+    .w-button button{
+        width: 97%;
+    }
+    main{
+        margin-bottom: 64px;
+    }
+}
+@include media-breakpoint-up(md) {
+    header{
+        margin-left: 64px;
+    }
+    nav{
+        width: 64px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #2E40FA 0%, #53F6B6 100%);
+        .navigation{
+            margin-top: 30px;
+        }
+    }
+    main{
+        margin-left: 64px;
+    }
+}
